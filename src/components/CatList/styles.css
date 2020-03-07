@@ -1,0 +1,25 @@
+.cat-list-container {
+  background: linear-gradient(
+    13.09deg,
+    #fafaff 12.05%,
+    rgba(255, 255, 255, 0) 1045.02%
+  );
+  border-radius: 5px;
+  flex: 3;
+  margin-left: 0.5em;
+}
+
+.cat-list-header {
+  border-bottom: 1px solid #d0dae8;
+}
+
+.cat-list-header h2 {
+  /* font-family: Brown; */
+  color: #000000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 1em;
+  text-transform: capitalize;
+}
