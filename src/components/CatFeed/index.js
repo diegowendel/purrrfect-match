@@ -6,7 +6,7 @@ import './styles.css';
 
 export default function CatFeed() {
   return (
-    <div className="cat-feed-container">
+    <aside className="cat-feed-container">
       <div className="cat-feed-header">
         <h2>CAT FEED</h2>
       </div>
@@ -22,6 +22,6 @@ export default function CatFeed() {
         <h2>How to patty-train your cat</h2>
         <img src={next} alt="next" />
       </div>
-    </div>
+    </aside>
   );
 }
