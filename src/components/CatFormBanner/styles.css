@@ -1,0 +1,18 @@
+.cat-form-banner-container {
+  background: rgba(3, 0, 250, 0.4);
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 0.7rem;
+}
+
+.cat-form-banner-container h1 {
+  font-family: 'Bennet Display';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 78px;
+  line-height: 94px;
+  display: flex;
+  align-items: center;
+  color: #f3f3ff;
+  padding: 10px 29px;
+}

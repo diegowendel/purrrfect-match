@@ -1,5 +1,14 @@
 import React from 'react';
+import CatForm from '../../components/CatForm';
+import CatFormBanner from '../../components/CatFormBanner';
+
+import './styles.css';
 
 export default function FormPage() {
-  return <h2>Form</h2>;
+  return (
+    <div className="form-page-container">
+      <CatFormBanner />
+      <CatForm />
+    </div>
+  );
 }
