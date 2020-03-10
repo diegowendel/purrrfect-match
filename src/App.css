@@ -8,17 +8,18 @@
 
 @font-face {
   font-family: 'Brown';
-  src: local('Brown'), url(./fonts/BrownMedium-Regular.ttf) format('opentype');
+  src: local('Brown'),
+    url(./assets/fonts/BrownMedium-Regular.ttf) format('opentype');
 }
 
 @font-face {
   font-family: 'Brown';
   font-weight: bold;
-  src: local('Brown'), url(./fonts/Brown-Bold.ttf) format('opentype');
+  src: local('Brown'), url(./assets/fonts/Brown-Bold.ttf) format('opentype');
 }
 
 @font-face {
   font-family: 'Brown';
   font-style: italic;
-  src: local('Brown'), url(./fonts/Brown-Italic.ttf) format('opentype');
+  src: local('Brown'), url(./assets/fonts/Brown-Italic.ttf) format('opentype');
 }

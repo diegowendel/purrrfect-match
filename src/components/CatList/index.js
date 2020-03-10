@@ -1,10 +1,8 @@
 import React from 'react';
-import { useDataApi } from '../../hooks/Api';
 
 import './styles.css';
 
 function CatItem({ cat }) {
-  console.log('cat', cat);
   return (
     <li>
       <div className="cat-avatar">
@@ -25,8 +23,6 @@ function CatItem({ cat }) {
 }
 
 export default function CatList() {
-  const [{ data }] = useDataApi('/images/search?limit=20');
-
   return (
     <main className="cat-list-container">
       <div className="cat-list-header">
@@ -34,9 +30,9 @@ export default function CatList() {
       </div>
       <div className="cat-list-body">
         <ul>
-          {data.map((cat, index) => (
+          {/* {data.map((cat, index) => (
             <CatItem key={index} cat={cat} />
-          ))}
+          ))} */}
         </ul>
       </div>
     </main>

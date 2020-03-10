@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
 
-import logo from '../../assets/purrrfect_logo.svg';
-import plusIcon from '../../assets/plus.svg';
-import searchIcon from '../../assets/search.svg';
+import logo from '../../assets/svg/purrrfect_logo.svg';
+import plusIcon from '../../assets/svg/plus.svg';
+import searchIcon from '../../assets/svg/search.svg';
 
 import './styles.css';
 

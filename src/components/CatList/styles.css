@@ -6,7 +6,7 @@
   );
   border-radius: 5px;
   flex: 3;
-  margin-left: 0.5em;
+  margin-left: 0.7em;
 }
 
 .cat-list-header {
@@ -75,17 +75,4 @@
   line-height: 13px;
   color: #000000;
   flex: 1;
-}
-
-::-webkit-scrollbar {
-  width: 3px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: #5452f6;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(84, 82, 246, 0.6);
 }

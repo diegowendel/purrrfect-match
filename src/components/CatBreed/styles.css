@@ -1,4 +1,4 @@
-.cat-feed-container {
+.cat-breed-container {
   background: linear-gradient(
     36.31deg,
     #fafaff 12.05%,
@@ -6,14 +6,14 @@
   );
   border-radius: 5px;
   flex: 1;
-  margin-right: 0.5em;
+  margin-right: 0.7em;
 }
 
-.cat-feed-header {
+.cat-breed-header {
   border-bottom: 1px solid #d0dae8;
 }
 
-.cat-feed-header h2 {
+.cat-breed-header h2 {
   font-family: 'Brown';
   color: #000000;
   font-size: 20px;
@@ -24,7 +24,26 @@
   text-transform: capitalize;
 }
 
-.cat-feed-list {
+.cat-breed-body {
+  padding: 0 0em;
+  overflow-y: scroll;
+  margin: 10px;
+  /* The height of this element is 100% of its father's height,
+     * minus 60px from the header's height,
+     * minus 20px from the margin top/bottom
+     */
+  height: calc(100% - 80px);
+}
+
+.cat-breed-item:hover {
+  background: rgba(3, 0, 250, 0.05);
+}
+
+.cat-breed-item-selected {
+  background: rgba(3, 0, 250, 0.1);
+}
+
+.cat-breed-list-inner {
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -35,11 +54,7 @@
   margin: 0 2em;
 }
 
-.cat-feed-list:hover {
-  background: #e29322;
-}
-
-.cat-feed-list h2 {
+.cat-breed-list-inner h2 {
   font-family: 'Brown';
   color: #000000;
   font-style: italic;

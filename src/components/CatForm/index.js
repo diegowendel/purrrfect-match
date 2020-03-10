@@ -1,7 +1,7 @@
 import React from 'react';
 
-import nextIcon from '../../assets/arrow_next_white.svg';
-import plusIcon from '../../assets/plus_white.svg';
+import nextIcon from '../../assets/svg/arrow_next_white.svg';
+import plusIcon from '../../assets/svg/plus_white.svg';
 
 import './styles.css';
 
