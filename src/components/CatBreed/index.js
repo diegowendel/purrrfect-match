@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getBreeds, selectBreed } from '../../redux/actions';
+import { getBreeds, getCatsByBreed, selectBreed } from '../../redux/actions';
 
 import next from '../../assets/svg/arrow_next.svg';
 
@@ -8,11 +8,17 @@ import './styles.css';
 
 export default function CatBreed() {
   const dispatch = useDispatch();
-  const { breeds, selected } = useSelector(state => state.breeds);
+  const { breeds, loading, selected } = useSelector(state => state.breeds);
 
   useEffect(() => {
     dispatch(getBreeds());
   }, []);
+
+  useEffect(() => {
+    if (selected) {
+      dispatch(getCatsByBreed(selected));
+    }
+  }, [selected]);
 
   function setBreed(breed) {
     dispatch(selectBreed(breed));

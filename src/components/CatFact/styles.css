@@ -1,0 +1,9 @@
+.cat-fact-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 18px;
+}
+
+.cat-fact-container > div {
+  margin-right: 10px;
+}

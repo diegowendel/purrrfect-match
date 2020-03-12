@@ -36,12 +36,17 @@
 }
 
 .cat-list-body li {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #d0dae8;
   padding: 0.5em 0;
+}
+
+.cat-list-body li:hover {
+  background: rgba(3, 0, 250, 0.05);
 }
 
 .cat-list-body ul:last-child {

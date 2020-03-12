@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 // Import all reducers
 import rootReducer from './reducers';
@@ -11,8 +12,7 @@ const sagaMiddleware = createSagaMiddleware();
 // Mount it on the store
 const store = createStore(
   rootReducer,
-  applyMiddleware(sagaMiddleware)
-  //   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeWithDevTools(applyMiddleware(sagaMiddleware))
 );
 
 sagaMiddleware.run(rootSaga);

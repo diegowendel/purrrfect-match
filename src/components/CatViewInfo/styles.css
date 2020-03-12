@@ -1,0 +1,120 @@
+.cat-view-info-container {
+  background: linear-gradient(
+    19.44deg,
+    #fafaff 12.05%,
+    rgba(255, 255, 255, 0) 1045.02%
+  );
+  border-radius: 5px;
+  flex: 1;
+  margin-left: 0.7rem;
+  padding: 2rem 4rem;
+}
+
+.cat-view-info-container h1 {
+  font-family: 'Brown';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.cat-view-info-container h3 {
+  font-family: 'Brown';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.cat-view-basic-breed-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.cat-view-basic-breed-info span {
+  font-family: 'Brown';
+  font-style: normal;
+  font-size: 13px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.cat-view-breed-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.cat-view-breed-info span {
+  font-family: 'Brown';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.cat-view-medical-record {
+  margin-top: 2rem;
+}
+
+.cat-view-medical-record a {
+  font-family: 'Brown';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.cat-view-additional-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.cat-view-additional-info h3 {
+  margin-bottom: 1rem;
+}
+
+.cat-info-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  grid-column: 1 / span 2;
+}
+
+.cat-info-progress-bars {
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-info-legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  grid-column: 3 / 4;
+}
+
+.cat-info-chart {
+  align-self: flex-end;
+  grid-column: 4/5;
+}
