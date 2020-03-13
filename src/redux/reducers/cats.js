@@ -26,6 +26,7 @@ function getStats(cat) {
       energy: getFactPercentage('energy_level', breed),
       grooming: getFactPercentage('grooming', breed),
       vocalisation: getFactPercentage('vocalisation', breed),
+      url: cat.url,
     };
   } else {
     stats = {
@@ -34,8 +35,10 @@ function getStats(cat) {
       energy: 0,
       grooming: 0,
       vocalisation: 0,
+      url: '',
     };
   }
+
   return stats;
 }
 

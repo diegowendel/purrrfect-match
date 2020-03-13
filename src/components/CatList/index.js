@@ -44,8 +44,12 @@ export default function CatList() {
       </div>
       <div className="cat-list-body">
         <ul>
-          {cats.map((cat, index) => (
-            <CatItem key={index} cat={cat} handleClick={navigateToViewPage} />
+          {/* Here, we avoid using the index as key for mapped elements.
+           * Index as keys may cause bugs in some situations and it is
+           * considered an anti-pattern on ReactJS.
+           */}
+          {cats.map(cat => (
+            <CatItem key={cat.id} cat={cat} handleClick={navigateToViewPage} />
           ))}
         </ul>
       </div>

@@ -1,0 +1,43 @@
+.related-cats-container {
+}
+
+.related-cats-container h1 {
+  font-family: 'Brown';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #f3f3ff;
+  margin: 2rem 0;
+}
+
+.related-cat-img {
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.related-cat-img:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.related-cats-imgs-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding: 1rem 0;
+}
+
+.related-cats-imgs-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out 0s !important;
+}
+
+.related-cats-imgs-container img:hover {
+  transform: scale(1.05);
+}

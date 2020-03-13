@@ -8,4 +8,15 @@
   border-radius: 1.4rem;
   background: #b4d9ff;
   margin-top: 6px;
+  animation: loader 0.5s ease-in-out;
+}
+
+@keyframes loader {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }

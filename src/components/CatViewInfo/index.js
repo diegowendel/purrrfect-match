@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import ProgressBar from '../ProgressBar';
 import CatFact from '../CatFact';
@@ -14,27 +14,31 @@ export default function FormPage() {
     <section className="cat-view-info-container">
       <h1>{stats.breed.name}</h1>
       <h3>About</h3>
-      <div className="cat-view-basic-breed-info">
-        <span>
-          <b>Origin:</b> {stats.breed.origin}
-        </span>
-        <span>
-          <b>Life span:</b> {stats.breed.life_span} years
-        </span>
-        <span>
-          <b>Weight:</b> {stats.breed.weight.metric} kg
-        </span>
-      </div>
       <div className="cat-view-breed-info">
-        <span style={{ flex: 1 }}>
+        <p>
+          <b>Origin:</b> {stats.breed.origin}
+        </p>
+        <p>
+          <b>Life span:</b> {stats.breed.life_span} years
+        </p>
+        <p>
+          <b>Weight:</b> {stats.breed.weight.metric} kg
+        </p>
+        <p>
           <b>Temperament:</b> {stats.breed.temperament}
-        </span>
-        <span style={{ flex: 2 }}>
+        </p>
+        <p className="cat-info-description">
           <b>Description:</b> {stats.breed.description}
-        </span>
+        </p>
       </div>
       <div className="cat-view-medical-record">
-        <a href={stats.breed.vcahospitals_url}>View medical record</a>
+        <a
+          className="link-climatempo"
+          href={stats.breed.wikipedia_url}
+          target="_blank"
+          rel="noopener noreferrer">
+          View more information
+        </a>
       </div>
       <div className="cat-view-additional-info">
         <div className="cat-info-progress">

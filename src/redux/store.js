@@ -9,7 +9,13 @@ import rootSaga from './sagas';
 // Create the saga middleware
 const sagaMiddleware = createSagaMiddleware();
 
-// Mount it on the store
+/**
+ * Mount it on the store.
+ *
+ * Note that here, we use 'composeWithDevTools' to wrap the applyMiddleware function.
+ * We do so, because it gives us support to use Redux Dev Tools, that is a chrome plugin
+ * that helps us check the stored states.
+ */
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(sagaMiddleware))

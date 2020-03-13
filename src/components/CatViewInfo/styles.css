@@ -30,40 +30,18 @@
   display: flex;
   align-items: center;
   color: #000000;
-}
-
-.cat-view-basic-breed-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.cat-view-basic-breed-info span {
-  font-family: 'Brown';
-  font-style: normal;
-  font-size: 13px;
-  line-height: 13px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-}
-
-.cat-view-breed-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 2rem;
 }
 
-.cat-view-breed-info span {
-  font-family: 'Brown';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 16px;
+.cat-view-breed-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.cat-info-description {
+  grid-column: span 2;
 }
 
 .cat-view-medical-record {

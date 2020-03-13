@@ -30,7 +30,6 @@ function* getCatsByBreed(action) {
       getFromApi,
       `/images/search?breed_id=${action.payload.breed}&limit=20`
     );
-    console.log('response', response);
 
     yield put({
       type: SUCCESS_GET_CATS,
