@@ -6,7 +6,7 @@
   );
   border-radius: 5px;
   flex: 1;
-  padding: 2rem 4rem;
+  padding: 1rem 1rem;
   height: 100%;
   min-height: 40vh;
 }
@@ -36,7 +36,7 @@
 
 .cat-view-breed-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 2rem;
   margin-top: 1.5rem;
 }

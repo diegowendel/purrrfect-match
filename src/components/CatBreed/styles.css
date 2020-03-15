@@ -7,8 +7,8 @@
       rgba(255, 255, 255, 0) 1045.02%
     );
     position: absolute;
-    height: calc(100% - calc(4vh + 51px + 1rem));
-    top: calc(4vh + 50px + 1rem);
+    height: calc(100% - calc(4vh + var(--header-logo-height) + 1px + 1rem));
+    top: calc(4vh + var(--header-logo-height) + 1rem);
     left: 0;
     width: 250px;
     transform: translateX(0%);
@@ -22,8 +22,8 @@
       rgba(255, 255, 255, 0) 1045.02%
     );
     position: absolute;
-    height: calc(100% - calc(4vh + 51px + 1rem));
-    top: calc(4vh + 50px + 1rem);
+    height: calc(100% - calc(4vh + var(--header-logo-height) + 1px + 1rem));
+    top: calc(4vh + var(--header-logo-height) + 1rem);
     left: 0;
     transform: translateX(-120%);
     transition: transform 0.3s ease-in;

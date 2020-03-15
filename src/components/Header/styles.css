@@ -7,15 +7,16 @@
   }
 
   .burger div {
-    width: 25px;
-    height: 3px;
+    width: var(--burger-div-width);
+    height: var(--burger-div-height);
     background-color: white;
     margin: 5px;
     transition: all 0.3s ease;
   }
 
   .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg)
+      translate(var(--burger-translate-x), var(--burger-translate-y));
   }
 
   .toggle .line2 {
@@ -23,7 +24,8 @@
   }
 
   .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg)
+      translate(var(--burger-translate-x), var(--burger-translate-y-neg));
   }
 
   .header-container {
@@ -70,9 +72,8 @@
 
 .header-logo {
   cursor: pointer;
-  width: 300px;
-  height: 50px;
-  margin-right: 2rem;
+  width: var(--header-logo-width);
+  height: var(--header-logo-height);
 }
 
 .search-bar {

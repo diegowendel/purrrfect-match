@@ -20,7 +20,7 @@
 }
 
 .cat-form-inner-container {
-  margin: 10% 15%;
+  margin: var(--cat-form-title-height) var(--cat-form-title-width);
 }
 
 .cat-form-inner-container form {

@@ -1,5 +1,17 @@
-.cat-info-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-gap: 1.5rem;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  .cat-info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .cat-info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 1.5rem;
+  }
 }
