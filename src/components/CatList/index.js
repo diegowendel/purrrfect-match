@@ -3,6 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { selectCat } from '../../redux/actions';
 
+import cat from '../../assets/img/cat.png';
+import catLoading from '../../assets/svg/cat_loading.svg';
+
 import './styles.css';
 
 function CatItem({ cat, handleClick }) {
@@ -45,15 +48,30 @@ export default function CatList() {
         <h2>CAT LIST</h2>
       </div>
       <div className="cat-list-body">
-        <ul>
-          {/* Here, we avoid using the index as key for mapped elements.
-           * Index as keys may cause bugs in some situations and it is
-           * considered an anti-pattern on ReactJS.
-           */}
-          {cats.map(cat => (
-            <CatItem key={cat.id} cat={cat} handleClick={navigateToViewPage} />
-          ))}
-        </ul>
+        {loading ? (
+          <div className="cat-list-body-loader">
+            <img src={catLoading} alt="loading" />
+          </div>
+        ) : cats.length > 0 ? (
+          <ul>
+            {/* Here, we avoid using the index as key for mapped elements.
+             * Index as keys may cause bugs in some situations and it is
+             * considered an anti-pattern on ReactJS.
+             */}
+            {cats.map(cat => (
+              <CatItem
+                key={cat.id}
+                cat={cat}
+                handleClick={navigateToViewPage}
+              />
+            ))}
+          </ul>
+        ) : (
+          <div className="cat-list-body-empty">
+            <img src={cat} alt="empty list" />
+            <h2>Let's start searching for some kitties!</h2>
+          </div>
+        )}
       </div>
     </main>
   );

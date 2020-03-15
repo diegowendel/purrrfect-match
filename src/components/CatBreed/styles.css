@@ -39,7 +39,7 @@
     );
     border-radius: 5px;
     flex: 1;
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
 }
 
@@ -67,6 +67,14 @@
      * minus 20px from the margin top/bottom
      */
   height: calc(100% - 80px);
+}
+
+.cat-breed-body-loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cat-breed-item:hover {

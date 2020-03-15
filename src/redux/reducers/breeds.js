@@ -15,28 +15,28 @@ const initialState = {
 
 const breedReducer = (state = initialState, action) => {
   switch (action.type) {
+    case ASYNC_GET_BREEDS:
+      return {
+        ...state,
+        loading: true,
+      };
+    case FAILURE_GET_BREEDS:
+      return {
+        ...state,
+        breeds: [],
+        loading: false,
+        selected: undefined,
+      };
     case SELECT_BREED:
       return {
         ...state,
         selected: action.payload.selected,
         showingBreedsMenu: false,
       };
-    case ASYNC_GET_BREEDS:
-      return {
-        ...state,
-        loading: true,
-      };
     case SUCCESS_GET_BREEDS:
       return {
         ...state,
         breeds: action.payload.breeds,
-        loading: false,
-        selected: undefined,
-      };
-    case FAILURE_GET_BREEDS:
-      return {
-        ...state,
-        breeds: [],
         loading: false,
         selected: undefined,
       };

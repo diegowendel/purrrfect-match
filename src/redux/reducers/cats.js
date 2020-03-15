@@ -1,4 +1,8 @@
-import { SELECT_CAT, SUCCESS_GET_CATS } from '../actions/actionTypes';
+import {
+  ASYNC_GET_CATS,
+  SELECT_CAT,
+  SUCCESS_GET_CATS,
+} from '../actions/actionTypes';
 
 const initialState = {
   cats: [],
@@ -44,6 +48,11 @@ function getStats(cat) {
 
 const catReducer = (state = initialState, action) => {
   switch (action.type) {
+    case ASYNC_GET_CATS:
+      return {
+        ...state,
+        loading: true,
+      };
     case SELECT_CAT:
       let cat = action.payload.cat;
       let stats = getStats(cat);
