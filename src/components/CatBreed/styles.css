@@ -1,12 +1,46 @@
-.cat-breed-container {
-  background: linear-gradient(
-    36.31deg,
-    #fafaff 12.05%,
-    rgba(255, 255, 255, 0) 1045.02%
-  );
-  border-radius: 5px;
-  flex: 1;
-  margin-right: 0.7em;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 991px) {
+  .cat-breed-container-showing {
+    background: linear-gradient(
+      36.31deg,
+      #fafaff 12.05%,
+      rgba(255, 255, 255, 0) 1045.02%
+    );
+    position: absolute;
+    height: calc(100% - calc(4vh + 51px + 1rem));
+    top: calc(4vh + 50px + 1rem);
+    left: 0;
+    width: 250px;
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .cat-breed-container {
+    background: linear-gradient(
+      36.31deg,
+      #fafaff 12.05%,
+      rgba(255, 255, 255, 0) 1045.02%
+    );
+    position: absolute;
+    height: calc(100% - calc(4vh + 51px + 1rem));
+    top: calc(4vh + 50px + 1rem);
+    left: 0;
+    transform: translateX(-120%);
+    transition: transform 0.3s ease-in;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cat-breed-container {
+    background: linear-gradient(
+      36.31deg,
+      #fafaff 12.05%,
+      rgba(255, 255, 255, 0) 1045.02%
+    );
+    border-radius: 5px;
+    flex: 1;
+    overflow-y: scroll;
+  }
 }
 
 .cat-breed-header {
@@ -61,4 +95,16 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 14px;
+}
+
+/**
+ * Used to apply special styles to the scroll bars
+ */
+.cat-breed-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #5452f6;
+}
+
+.cat-breed-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(84, 82, 246, 0.6);
 }

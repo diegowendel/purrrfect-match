@@ -5,8 +5,9 @@
     rgba(255, 255, 255, 0) 1045.02%
   );
   border-radius: 5px;
-  flex: 3;
-  margin-left: 0.7em;
+  grid-column: span 3;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .cat-list-header {
@@ -63,6 +64,13 @@
   height: 80px;
 }
 
+.cat-line-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 0.5rem;
+  width: 100%;
+}
+
 .cat-list-body li h3 {
   font-family: 'Brown';
   font-style: italic;
@@ -70,14 +78,16 @@
   font-size: 20px;
   line-height: 19px;
   color: #000000;
-  flex: 1;
 }
 
-.cat-list-body li span {
-  font-family: 'Brown';
-  font-style: normal;
-  font-size: 13px;
-  line-height: 13px;
-  color: #000000;
-  flex: 1;
+/**
+ * Used to apply special styles to the scroll bars
+ */
+.cat-list-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #5452f6;
+}
+
+.cat-list-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(84, 82, 246, 0.6);
 }

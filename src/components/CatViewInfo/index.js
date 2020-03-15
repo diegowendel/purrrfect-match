@@ -59,65 +59,77 @@ export default function FormPage() {
           </div>
         </div>
         <div className="cat-info-legend">
-          <h3>Average Day</h3>
-          <div>
-            <CatFact
-              color="#5452F6"
-              factName="Affection"
-              factPercentage={stats.affection}
-            />
-            <CatFact
-              color="#00A3FF"
-              factName="Energetic"
-              factPercentage={stats.energy}
-            />
-            <CatFact
-              color="#B4D9FF"
-              factName="Grooming"
-              factPercentage={stats.grooming}
-            />
-            <CatFact
-              color="#3876F3"
-              factName="Vocalisation"
-              factPercentage={stats.vocalisation}
-            />
+          <div className="cat-info-average">
+            <h3>Average Day</h3>
+            <div>
+              <CatFact
+                color="#5452F6"
+                factName="Affection"
+                factPercentage={stats.affection}
+              />
+              <CatFact
+                color="#00A3FF"
+                factName="Energetic"
+                factPercentage={stats.energy}
+              />
+              <CatFact
+                color="#B4D9FF"
+                factName="Grooming"
+                factPercentage={stats.grooming}
+              />
+              <CatFact
+                color="#3876F3"
+                factName="Vocalisation"
+                factPercentage={stats.vocalisation}
+              />
+            </div>
           </div>
-        </div>
-        <div className="cat-info-chart">
-          <Pie
-            data={{
-              labels: ['Affection', 'Energetic', 'Grooming', 'Vocalisation'],
-              datasets: [
-                {
-                  backgroundColor: ['#5452F6', '#00A3FF', '#B4D9FF', '#3876F3'],
-                  data: [
-                    stats.affection,
-                    stats.energy,
-                    stats.grooming,
-                    stats.vocalisation,
-                  ],
+          <div className="cat-info-chart">
+            <Pie
+              data={{
+                labels: ['Affection', 'Energetic', 'Grooming', 'Vocalisation'],
+                datasets: [
+                  {
+                    backgroundColor: [
+                      '#5452F6',
+                      '#00A3FF',
+                      '#B4D9FF',
+                      '#3876F3',
+                    ],
+                    data: [
+                      stats.affection,
+                      stats.energy,
+                      stats.grooming,
+                      stats.vocalisation,
+                    ],
+                  },
+                ],
+              }}
+              width={100}
+              height={100}
+              options={{
+                maintainAspectRatio: false,
+                legend: {
+                  display: false,
                 },
-              ],
-            }}
-            width={100}
-            height={100}
-            options={{
-              maintainAspectRatio: false,
-              legend: {
-                display: false,
-              },
-              tooltips: {
-                callbacks: {
-                  label: function(tooltipItem, data) {
-                    return ` ${data['labels'][tooltipItem['index']]}: ${
-                      data['datasets'][0]['data'][tooltipItem['index']]
-                    }%`;
+                tooltips: {
+                  callbacks: {
+                    label: function(tooltipItem, data) {
+                      return ` ${data['labels'][tooltipItem['index']]}: ${
+                        data['datasets'][0]['data'][tooltipItem['index']]
+                      }%`;
+                    },
+                  },
+                  enabled: true,
+                },
+                layout: {
+                  padding: {
+                    right: 30,
                   },
                 },
-                enabled: true,
-              },
-            }}
-          />
+              }}
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -6,7 +6,6 @@
   );
   border-radius: 5px;
   flex: 1;
-  margin-left: 0.7rem;
 }
 
 .cat-form-title {
@@ -21,7 +20,7 @@
 }
 
 .cat-form-inner-container {
-  margin: 10% 20%;
+  margin: 10% 15%;
 }
 
 .cat-form-inner-container form {

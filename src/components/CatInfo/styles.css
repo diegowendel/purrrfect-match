@@ -1,7 +1,5 @@
 .cat-info-container {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 1.5rem;
 }

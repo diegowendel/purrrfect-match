@@ -3,6 +3,7 @@ import {
   ASYNC_GET_CATS,
   SELECT_BREED,
   SELECT_CAT,
+  TOGGLE_BREEDS_MENU,
 } from './actionTypes';
 
 export const getBreeds = () => ({
@@ -28,4 +29,8 @@ export const selectCat = cat => ({
   payload: {
     cat,
   },
+});
+
+export const toggleBreedsMenu = () => ({
+  type: TOGGLE_BREEDS_MENU,
 });

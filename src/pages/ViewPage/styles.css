@@ -1,7 +1,6 @@
 .view-page-container {
   display: flex;
   flex-direction: column;
-  flex: 1;
   overflow-x: hidden;
-  overflow-y: hidden;
+  padding-right: 10px;
 }

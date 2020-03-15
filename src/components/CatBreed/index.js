@@ -8,7 +8,9 @@ import './styles.css';
 
 export default function CatBreed() {
   const dispatch = useDispatch();
-  const { breeds, loading, selected } = useSelector(state => state.breeds);
+  const { breeds, loading, selected, showingBreedsMenu } = useSelector(
+    state => state.breeds
+  );
 
   useEffect(() => {
     dispatch(getBreeds());
@@ -25,7 +27,12 @@ export default function CatBreed() {
   }
 
   return (
-    <aside className="cat-breed-container">
+    <aside
+      className={
+        showingBreedsMenu
+          ? 'cat-breed-container-showing'
+          : 'cat-breed-container'
+      }>
       <div className="cat-breed-header">
         <h2>CAT BREEDS</h2>
       </div>

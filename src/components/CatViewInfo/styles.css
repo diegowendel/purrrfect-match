@@ -6,8 +6,9 @@
   );
   border-radius: 5px;
   flex: 1;
-  margin-left: 0.7rem;
   padding: 2rem 4rem;
+  height: 100%;
+  min-height: 40vh;
 }
 
 .cat-view-info-container h1 {
@@ -35,7 +36,7 @@
 
 .cat-view-breed-info {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   grid-gap: 2rem;
   margin-top: 1.5rem;
 }
@@ -61,7 +62,7 @@
 
 .cat-view-additional-info {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 2rem;
 }
 
@@ -75,7 +76,7 @@
   justify-content: space-between;
   align-items: stretch;
   height: 100%;
-  grid-column: 1 / span 2;
+  grid-column: span 2;
 }
 
 .cat-info-progress-bars {
@@ -85,14 +86,20 @@
 
 .cat-info-legend {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  grid-column: span 2;
+}
+
+.cat-info-average {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
-  height: 100%;
-  grid-column: 3 / 4;
+  align-items: flex-start;
 }
 
 .cat-info-chart {
   align-self: flex-end;
-  grid-column: 4/5;
 }

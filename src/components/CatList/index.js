@@ -13,16 +13,18 @@ function CatItem({ cat, handleClick }) {
       <div className="cat-avatar">
         <img src={cat.url} alt="Cat" />
       </div>
-      <h3>{breed.name}</h3>
-      <span>
-        <b>Origin:</b> {breed.origin}
-      </span>
-      <span>
-        <b>Life span:</b> {breed.life_span} years
-      </span>
-      <span>
-        <b>Weight:</b> {breed.weight.metric} kg
-      </span>
+      <div className="cat-line-info">
+        <h3>{breed.name}</h3>
+        <p>
+          <b>Origin:</b> {breed.origin}
+        </p>
+        <p>
+          <b>Life span:</b> {breed.life_span} years
+        </p>
+        <p>
+          <b>Weight:</b> {breed.weight.metric} kg
+        </p>
+      </div>
     </li>
   );
 }
