@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/purrrfect-match/static/css/main.42b4ce21.chunk.css",
+    "main.css": "/purrrfect-match/static/css/main.96ba8b01.chunk.css",
     "main.js": "/purrrfect-match/static/js/main.1bd456a7.chunk.js",
     "main.js.map": "/purrrfect-match/static/js/main.1bd456a7.chunk.js.map",
     "runtime-main.js": "/purrrfect-match/static/js/runtime-main.cc108dd9.js",
@@ -8,9 +8,9 @@
     "static/js/2.8d3b92cc.chunk.js": "/purrrfect-match/static/js/2.8d3b92cc.chunk.js",
     "static/js/2.8d3b92cc.chunk.js.map": "/purrrfect-match/static/js/2.8d3b92cc.chunk.js.map",
     "index.html": "/purrrfect-match/index.html",
-    "precache-manifest.5c56326d73ca1179c00e686e2fc55565.js": "/purrrfect-match/precache-manifest.5c56326d73ca1179c00e686e2fc55565.js",
+    "precache-manifest.39ff6441c4dbfc09e1e091390db0dc0d.js": "/purrrfect-match/precache-manifest.39ff6441c4dbfc09e1e091390db0dc0d.js",
     "service-worker.js": "/purrrfect-match/service-worker.js",
-    "static/css/main.42b4ce21.chunk.css.map": "/purrrfect-match/static/css/main.42b4ce21.chunk.css.map",
+    "static/css/main.96ba8b01.chunk.css.map": "/purrrfect-match/static/css/main.96ba8b01.chunk.css.map",
     "static/js/2.8d3b92cc.chunk.js.LICENSE.txt": "/purrrfect-match/static/js/2.8d3b92cc.chunk.js.LICENSE.txt",
     "static/media/App.css": "/purrrfect-match/static/media/BrownMedium-Regular.03efe788.ttf",
     "static/media/arrow_next.svg": "/purrrfect-match/static/media/arrow_next.f4f7d91e.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.cc108dd9.js",
     "static/js/2.8d3b92cc.chunk.js",
-    "static/css/main.42b4ce21.chunk.css",
+    "static/css/main.96ba8b01.chunk.css",
     "static/js/main.1bd456a7.chunk.js"
   ]
 }
