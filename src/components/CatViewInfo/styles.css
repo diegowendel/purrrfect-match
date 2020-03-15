@@ -6,7 +6,7 @@
   );
   border-radius: 5px;
   flex: 1;
-  padding: 1rem 1rem;
+  padding: var(--cat-view-info-pd-height) var(--cat-view-info-pd-width);
   height: 100%;
   min-height: 40vh;
 }

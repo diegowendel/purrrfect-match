@@ -76,6 +76,8 @@ ul {
     --burger-translate-y-neg: -3px;
     --cat-form-title-height: 5%;
     --cat-form-title-width: 7.5%;
+    --cat-view-info-pd-height: 1rem;
+    --cat-view-info-pd-width: 1rem;
   }
 }
 
@@ -94,6 +96,8 @@ ul {
     --burger-translate-y-neg: -3px;
     --cat-form-title-height: 5%;
     --cat-form-title-width: 7.5%;
+    --cat-view-info-pd-height: 1rem;
+    --cat-view-info-pd-width: 2rem;
   }
 }
 
@@ -112,6 +116,8 @@ ul {
     --burger-translate-y-neg: -6px;
     --cat-form-title-height: 10%;
     --cat-form-title-width: 15%;
+    --cat-view-info-pd-height: 1rem;
+    --cat-view-info-pd-width: 2rem;
   }
 }
 
@@ -130,6 +136,8 @@ ul {
     --burger-translate-y-neg: -6px;
     --cat-form-title-height: 10%;
     --cat-form-title-width: 15%;
+    --cat-view-info-pd-height: 2rem;
+    --cat-view-info-pd-width: 4rem;
   }
 }
 
@@ -148,5 +156,7 @@ ul {
     --burger-translate-y-neg: -6px;
     --cat-form-title-height: 10%;
     --cat-form-title-width: 15%;
+    --cat-view-info-pd-height: 2rem;
+    --cat-view-info-pd-width: 4rem;
   }
 }
